@@ -1,0 +1,28 @@
+.searchbar_container {
+  width: 100%;
+  position: relative;
+  padding-top: 1rem;
+  .searchbar {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    z-index: 1;
+    &:focus + .searchbar_label {
+      top: 5px;
+    }
+    &:valid + .searchbar_label {
+      top: 5px;
+    }
+  }
+  .searchbar_label {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    z-index: 0;
+    transition: 0.3s ease-out;
+  }
+}

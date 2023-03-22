@@ -1,0 +1,47 @@
+.chats {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  .userChat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 4rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+    gap: 1rem;
+    &:active {
+      scale: 0.95;
+    }
+    &:hover {
+      background-color: #46464670;
+    }
+    .userChat_info {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      .user_name {
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+      .user_last_text {
+        color: rgb(184, 184, 184);
+      }
+    }
+    svg {
+      color: white;
+      height: 100%;
+      width: 50px;
+    }
+  }
+}

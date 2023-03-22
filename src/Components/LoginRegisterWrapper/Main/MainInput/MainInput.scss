@@ -1,0 +1,50 @@
+.main_input {
+  height: 75px;
+  background-color: black;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  .main_input_field {
+    width: 90%;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  .send {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0 1rem;
+    svg {
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .main_input {
+    justify-content: space-between;
+    .send {
+      width: 15%;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .main_input {
+    justify-content: space-between;
+    .send {
+      width: 22%;
+    }
+  }
+}
